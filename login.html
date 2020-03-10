@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Overpass|Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7303b245f4.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="div1 griditem">
+        <h1>LOGO</h1>
+        <ul>
+            <li> <a href="/index.html"> Home </a></li>
+            <li> <a href="#"> About </a></li>
+            <li> <a href="#"> Contact Us </a></li>
+        </ul>
+    </div>
+    <form>
+    <div class="segment">
+        <h1>Sign in</h1>
+      </div>
+      
+      <label>
+        <input type="text" placeholder="Email Address"/>
+      </label>
+      <label>
+        <input type="password" placeholder="Password"/>
+      </label>
+      <button class="red" type="button"><i class="fas fa-lock"></i>  Log in</button>
+      
+      <div class="segment">
+        <button class="unit" type="button"><img src="/assets/img/Google__G__Logo.svg" alt="" width="30px"></button>
+        <button class="unit" type="button"><img src="/assets/img/linkedin.svg" alt="" width="30px"></button>
+        <button class="unit" type="button"><img src="/assets/img/twitter.svg" alt="" width="30px"></button>
+      </div>
+
+    </form>
+
+
+    
+    <div class="div4">
+        <h1>Footer</h1>
+        <p>Copyright © 2020</p>
+    </div>
+
+
+    <style>
+
+*{
+            font-family: 'Overpass';
+        }
+
+        *:focus{
+            outline: none;
+        }
+p, h1, h2, h3, span{
+    margin: 0;
+    padding: 0;
+}
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Overpass';
+            letter-spacing: 0.8px;
+            background-color: #EBECF0;
+
+        }
+
+        .div1 {
+            background-color: yellowgreen;
+            text-align: center;
+            height: 70px;
+            padding: 0px 80px;
+        }
+
+        .div1 h1{
+            display: inline-block;
+            line-height: 70px;
+            float: left;
+            margin: 0;
+        }
+
+        .div1 ul {
+            float: right;
+            margin: auto;
+            padding: auto;
+        }
+    
+        .div1 ul li{
+            display: inline;
+            line-height: 70px;
+            padding: 0 15px;
+        }
+
+        .div1 ul li a{
+         color: black;
+         text-decoration: none;
+        
+        }
+
+        .div4 {
+            grid-area: footer;
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* --------------------- Start sign in form  -------------------  */
+        form {
+  padding: 16px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.segment {
+  padding: 35px 0;
+  text-align: center;
+}
+
+button, input {
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 320px;
+  padding: 16px;
+  background-color: #EBECF0;
+  text-shadow: 1px 1px 0 #FFF;
+}
+
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  margin-right: 8px;
+  box-shadow: inset 2px 2px 6px rgb(164, 168, 180), inset -5px -5px 10px #FFF;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+}
+input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+button {
+  color: rgb(73, 77, 94);
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  font-family: 'Overpass';
+  font-size: 20px;
+  padding: 12px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+  padding: 14px;
+}
+
+button.red {
+  display: block;
+  width: 100%;
+  color: rgb(28, 199, 94);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.input-group label {
+  margin: 0;
+  flex: 1;
+}
+
+/* --------------------- End sign in form  -------------------  */
+
+
+    </style>
+</body>
+</html>
